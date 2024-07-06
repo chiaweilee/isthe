@@ -14,9 +14,9 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
       - name: Build with dumi
-        run: pnpm run docs:build
+        run: npm run docs:build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
