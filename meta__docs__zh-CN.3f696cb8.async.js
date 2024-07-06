@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkiscorrect=self.webpackChunkiscorrect||[]).push([[579],{50567:function(r,t,n){n.r(t),n.d(t,{demos:function(){return s}});var o=n(67294),c=n(68012),s={}},90293:function(r,t,n){n.r(t),n.d(t,{texts:function(){return c}});var o=n(68012);const c=[]}}]);
