@@ -1,4 +1,5 @@
 import { defineConfig } from 'dumi';
+import { resolve } from 'path';
 
 export default defineConfig({
   outputPath: 'docs-dist',
@@ -6,7 +7,7 @@ export default defineConfig({
     name: 'iscorrect',
   },
   locales: [
-    { id: 'zh-CN', name: '中文' },
     { id: 'en-US', name: 'EN' },
+    { id: 'zh-CN', name: '中文' },
   ],
 });

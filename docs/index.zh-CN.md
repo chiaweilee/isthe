@@ -3,9 +3,9 @@ hero:
   title: iscorrect
   description: A JavaScript library that supports validation, parsing, and conversion of input data formats.
   actions:
-    - text: Getting Started
+    - text: 快速上手
       link: /overview
-    - text: Documentation
+    - text: 文档
       link: /library
 features:
   - title: Hello

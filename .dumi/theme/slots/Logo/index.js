@@ -12,6 +12,6 @@ var Logo = function Logo() {
   }, themeConfig.logo ? /*#__PURE__*/React.createElement("img", {
     src: themeConfig.logo,
     alt: themeConfig.name
-  }) : /*#__PURE__*/React.createElement(DefaultLogo, null), themeConfig.name);
+  }) : /*#__PURE__*/React.createElement(DefaultLogo, null));
 };
 export default Logo;
