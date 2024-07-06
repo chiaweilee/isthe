@@ -1,0 +1,132 @@
+@import "../../styles/variables.less";
+
+.markdown {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--dv-c-text-1);
+
+  // hyperlink
+  a {
+    color: @c-primary;
+  }
+
+  // inline code
+  *:not(pre) code {
+    padding: 3px 6px;
+    color: var(--dv-c-text-code);
+    background: var(--dv-c-bg-mute);
+    border-radius: 4px;
+  }
+
+  // pre tag
+  pre {
+    font-size: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: @c-card-bg-light; //tint(@c-site-bg, 50%);
+  }
+
+  // table
+  table {
+    width: 100%;
+  }
+
+  th {
+    background-color: tint(@c-site-bg, 50%);
+  }
+
+  th,
+  td {
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    border-color: @c-border-light;
+  }
+
+  // blockquote
+  blockquote {
+    font-style: italic;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    background-color: tint(@c-site-bg, 50%);
+    border-left: 5px solid @c-border-light;
+  }
+
+  // list
+  ul li {
+    line-height: 1.8;
+  }
+
+  // anchor of headings
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    > a[aria-hidden]:first-child {
+      float: left;
+      width: 20px;
+      padding-inline-end: 4px;
+      margin-inline-start: -24px;
+      color: @c-text;
+      // hide phantom blank node
+      font-size: 0;
+      text-align: right;
+      line-height: inherit;
+
+      [data-direction="rtl"] & {
+        float: right;
+      }
+
+      &:hover {
+        border: 0;
+      }
+
+      > .icon-link::before {
+        content: "¶";
+        color: @c-primary;
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+
+    &:not(:hover) > a[aria-hidden]:first-child > .icon-link {
+      visibility: hidden;
+    }
+  }
+
+  img,
+  video,
+  figure {
+    max-width: 100%;
+  }
+}
+
+.@{prefix}-content {
+  flex: 1;
+  min-width: 480px;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  &:not([data-no-sidebar]) {
+    padding: 24px 48px 48px;
+    background-color: #fff;
+
+    @media @mobile {
+      max-width: initial;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  .@{prefix}-header + main > &,
+  .@{prefix}-doc-layout-mobile-bar + main > & {
+    min-height: calc(100vh - var(--dv-nav-height));
+
+    @media @mobile {
+      min-height: calc(100vh - var(--dv-nav-height-mobile));
+    }
+  }
+}

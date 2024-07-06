@@ -1,0 +1,56 @@
+@import "../../styles/variables.less";
+
+.@{prefix}-source-code {
+  position: relative;
+
+  > pre.prism-code {
+    margin: 0;
+    padding: 18px 24px;
+    font-size: 14px;
+    line-height: 1.58;
+    direction: ltr;
+    background: transparent;
+    border-radius: 8px;
+    overflow: auto;
+    max-height: 600px;
+
+    // remove shadow from coy theme
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  &-copy {
+    position: absolute;
+    z-index: 1;
+    top: 9px;
+    right: 12px;
+    display: inline-block;
+    padding: 8px;
+    background-color: var(--dv-c-text-dark-4);
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    svg {
+      font-size: 16px;
+      fill: var(--dv-c-text-dark-2);
+      transition: fill 0.2s;
+    }
+
+    &:hover svg {
+      fill: var(--dv-c-text-dark-1);
+    }
+
+    &[data-copied] svg {
+      fill: var(--dv-c-green);
+    }
+  }
+
+  &:not(:hover) &-copy {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

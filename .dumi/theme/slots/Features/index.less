@@ -1,0 +1,56 @@
+@import "../../styles/variables.less";
+
+.@{prefix}-features {
+  margin: 0 auto;
+  max-width: var(--dv-layout-max-width);
+  padding: 32px 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  @media @mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &-item {
+    border-radius: 12px;
+    padding: 24px;
+    background-color: @c-card-bg-light;
+    border: 1px solid @c-card-bg-light;
+
+    > i {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      background-color: @c-card-hover-bg;
+      border-radius: 6px;
+      font-style: normal;
+      margin-bottom: 20px;
+    }
+
+    > h2 {
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    > p {
+      padding-top: 8px;
+      line-height: 24px;
+      font-size: 14px;
+      font-weight: 500;
+      color: @c-text-secondary;
+
+      a {
+        color: @c-primary;
+
+        &:not(:hover) {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

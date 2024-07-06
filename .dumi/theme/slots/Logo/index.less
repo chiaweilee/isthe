@@ -1,0 +1,26 @@
+@import (reference) "../../styles/variables.less";
+
+.@{prefix}-logo {
+  display: inline-flex;
+  align-items: center;
+  color: @c-text;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @media @mobile {
+    font-size: 16px;
+  }
+
+  img,
+  svg {
+    margin-right: 8px;
+    height: 24px;
+  }
+}
