@@ -1,5 +1,10 @@
 import { defineConfig } from 'dumi';
 
+const productionConfig = {
+  base: '/iscorrect/',
+  publicPath: '/iscorrect/',
+};
+
 export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: {
@@ -9,7 +14,5 @@ export default defineConfig({
     { id: 'en-US', name: 'EN' },
     { id: 'zh-CN', name: '中文' },
   ],
-  base: '/iscorrect',
-  publicPath: '/iscorrect/',
-  runtimePublicPath: {},
+  ...(process.env.NODE_ENV === 'production' ? productionConfig : {}),
 });
