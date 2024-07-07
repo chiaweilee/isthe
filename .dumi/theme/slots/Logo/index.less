@@ -1,14 +1,15 @@
 @import (reference) "../../styles/variables.less";
 
 .@{prefix}-logo {
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
   color: @c-text;
   font-size: 16px;
   line-height: 1;
   font-weight: 500;
+  height: 40px;
   text-decoration: none;
   transition: opacity 0.25s;
+  overflow: hidden;
 
   &:hover {
     opacity: 0.6;
@@ -21,7 +22,7 @@
   img,
   svg {
     margin-right: 8px;
-    height: 40px;
-    transform: scale(1.9) translateY(-5px) translateZ(0);
+    height: 150%;
+    transform: translateY(-25%);
   }
 }
