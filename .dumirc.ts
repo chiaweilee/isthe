@@ -1,18 +1,45 @@
 import { defineConfig } from 'dumi';
+import { defineThemeConfig } from 'dumi-theme-chakra';
+
+const { name, description, keywords, author } = require('./package.json');
+
+const theme = defineThemeConfig({
+  helmetIcon: '🍺',
+  settingPanelVisible: process.env.NODE_ENV === 'development',
+  thumbBackground: true,
+  description,
+  keywords,
+  author,
+  social: {
+    github: {
+      name,
+      link: 'https://github.com/is-lib/iscorrect'
+    },
+  },
+  hero: {
+    showVersionBadge: true
+  },
+});
 
 const productionConfig = {
-  base: '/iscorrect/',
-  publicPath: '/iscorrect/',
+  base: `/${name}/`,
+  publicPath: `/${name}/`,
 };
 
 export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: {
-    name: 'iscorrect',
+    name,
+    logo: '/favicon.png',
+    footer: `Copyright © ${new Date().getFullYear()}`,
+    ...theme,
   },
   locales: [
-    { id: 'en-US', name: 'EN' },
+    { id: 'en-US', name: 'English' },
     { id: 'zh-CN', name: '中文' },
   ],
+  codeSplitting: {
+    jsStrategy: 'bigVendors'
+  },
   ...(process.env.NODE_ENV === 'production' ? productionConfig : {}),
 });
