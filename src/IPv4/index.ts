@@ -1,6 +1,6 @@
 import { DEFAULT_ALLOW_LEADING_ZERO, DEFAULT_FORMATS } from './constant';
 import { formatIPv4, getIPv4Format, isValidIPv4 } from './helper';
-import { IPv4Formatted, IPv4Options, IPv4Result } from './index.d';
+import { IPv4Formatted, IPv4Options, IPv4Result } from './types';
 
 export default function isIPv4(
   ip: unknown,

@@ -1,4 +1,4 @@
-import { IPv4Formatted } from './index.d';
+import { IPv4Formatted } from './types';
 
 function getPartFormat(part: string): keyof IPv4Formatted {
   if (/^0[xX][\da-fA-F]{2}/.test(part)) return 'hex';

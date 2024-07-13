@@ -1,6 +1,6 @@
 import { DefaultOptions, MDN, specialTypesName } from './constant';
 import { cleanCC, cleanMobile, findMAC } from './helper';
-import { MobileNoOptions, MobileNoResult } from './index.d';
+import { MobileNoOptions, MobileNoResult } from './types';
 import DefaultLocale from './locale';
 
 export default function isCNMobile(

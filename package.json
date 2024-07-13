@@ -76,5 +76,8 @@
   },
   "authors": [
     "ljw@live.jp"
-  ]
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.24.8"
+  }
 }
