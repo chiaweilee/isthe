@@ -21,11 +21,6 @@ const theme = defineThemeConfig({
   },
 });
 
-const productionConfig = {
-  base: `/${name}/`,
-  publicPath: `/${name}/`,
-};
-
 export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: {
@@ -41,5 +36,4 @@ export default defineConfig({
   codeSplitting: {
     jsStrategy: 'bigVendors'
   },
-  ...(process.env.NODE_ENV === 'production' ? productionConfig : {}),
 });
