@@ -13,11 +13,11 @@ const theme = defineThemeConfig({
   social: {
     github: {
       name,
-      link: 'https://github.com/is-lib/iscorrect'
+      link: 'https://github.com/is-lib/iscorrect',
     },
   },
   hero: {
-    showVersionBadge: true
+    showVersionBadge: true,
   },
 });
 
@@ -33,7 +33,17 @@ export default defineConfig({
     { id: 'en-US', name: 'English' },
     { id: 'zh-CN', name: '中文' },
   ],
-  codeSplitting: {
-    jsStrategy: 'bigVendors'
+  apiParser: {},
+  resolve: {
+    entryFile: './.dumi/resolveEntry.ts',
+    atomDirs: [
+      {
+        type: 'components',
+        dir: 'packages/iscorrect/src',
+      },
+    ],
+  },
+  alias: {
+    iscorrect: `${process.cwd()}/packages/iscorrect/src`,
   },
 });

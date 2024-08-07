@@ -4,75 +4,86 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@babel/runtime':
-    specifier: ^7.24.8
-    version: 7.24.8
+importers:
 
-devDependencies:
-  '@ant-design/icons-svg':
-    specifier: ^4.4.2
-    version: 4.4.2
-  '@commitlint/cli':
-    specifier: ^17.1.2
-    version: 17.8.1
-  '@commitlint/config-conventional':
-    specifier: ^17.1.0
-    version: 17.8.1
-  '@types/react':
-    specifier: ^18.0.0
-    version: 18.3.3
-  '@types/react-dom':
-    specifier: ^18.0.0
-    version: 18.3.0
-  '@umijs/lint':
-    specifier: ^4.0.0
-    version: 4.3.1(eslint@8.57.0)(jest@29.7.0)(stylelint@14.16.1)(typescript@5.5.3)
-  antd:
-    specifier: ^5.19.1
-    version: 5.19.1(react-dom@18.3.1)(react@18.3.1)
-  dumi:
-    specifier: ^2.3.0
-    version: 2.4.5(@babel/core@7.24.7)(@types/node@20.5.1)(@types/react@18.3.3)(eslint@8.57.0)(jest@29.7.0)(prettier@2.8.8)(react-dom@18.3.1)(react@18.3.1)(stylelint@14.16.1)(typescript@5.5.3)(webpack@5.92.1)
-  dumi-theme-chakra:
-    specifier: ^0.0.22
-    version: 0.0.22(@algolia/client-search@4.24.0)(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.3.3)(dumi@2.4.5)(react-dom@18.3.1)(react@18.3.1)(search-insights@2.14.0)
-  eslint:
-    specifier: ^8.23.0
-    version: 8.57.0
-  father:
-    specifier: ^4.1.0
-    version: 4.4.4(@babel/core@7.24.7)(@types/node@20.5.1)(styled-components@6.1.11)(webpack@5.92.1)
-  heti:
-    specifier: ^0.9.4
-    version: 0.9.4
-  husky:
-    specifier: ^8.0.1
-    version: 8.0.3
-  jest:
-    specifier: ^29.7.0
-    version: 29.7.0(@types/node@20.5.1)(ts-node@10.9.2)
-  lint-staged:
-    specifier: ^13.0.3
-    version: 13.3.0
-  prettier:
-    specifier: ^2.7.1
-    version: 2.8.8
-  prettier-plugin-organize-imports:
-    specifier: ^3.0.0
-    version: 3.2.4(prettier@2.8.8)(typescript@5.5.3)
-  prettier-plugin-packagejson:
-    specifier: ^2.2.18
-    version: 2.5.0(prettier@2.8.8)
-  react:
-    specifier: ^18.0.0
-    version: 18.3.1
-  react-dom:
-    specifier: ^18.0.0
-    version: 18.3.1(react@18.3.1)
-  stylelint:
-    specifier: ^14.9.1
-    version: 14.16.1
+  .:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.24.8
+        version: 7.24.8
+    devDependencies:
+      '@ant-design/icons-svg':
+        specifier: ^4.4.2
+        version: 4.4.2
+      '@commitlint/cli':
+        specifier: ^17.1.2
+        version: 17.8.1
+      '@commitlint/config-conventional':
+        specifier: ^17.1.0
+        version: 17.8.1
+      '@types/react':
+        specifier: ^18.0.0
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: ^18.0.0
+        version: 18.3.0
+      '@umijs/lint':
+        specifier: ^4.0.0
+        version: 4.3.1(eslint@8.57.0)(jest@29.7.0)(stylelint@14.16.1)(typescript@5.5.3)
+      antd:
+        specifier: ^5.19.1
+        version: 5.19.1(react-dom@18.3.1)(react@18.3.1)
+      dumi:
+        specifier: ^2.3.0
+        version: 2.4.5(@babel/core@7.24.7)(@types/node@20.5.1)(@types/react@18.3.3)(eslint@8.57.0)(jest@29.7.0)(prettier@2.8.8)(react-dom@18.3.1)(react@18.3.1)(stylelint@14.16.1)(typescript@5.5.3)(webpack@5.92.1)
+      dumi-theme-chakra:
+        specifier: ^0.0.22
+        version: 0.0.22(@algolia/client-search@4.24.0)(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(@types/react@18.3.3)(dumi@2.4.5)(react-dom@18.3.1)(react@18.3.1)(search-insights@2.14.0)
+      eslint:
+        specifier: ^8.23.0
+        version: 8.57.0
+      father:
+        specifier: ^4.1.0
+        version: 4.4.4(@babel/core@7.24.7)(@types/node@20.5.1)(styled-components@6.1.11)(webpack@5.92.1)
+      heti:
+        specifier: ^0.9.4
+        version: 0.9.4
+      husky:
+        specifier: ^8.0.1
+        version: 8.0.3
+      jest:
+        specifier: ^29.7.0
+        version: 29.7.0(@types/node@20.5.1)(ts-node@10.9.2)
+      lint-staged:
+        specifier: ^13.0.3
+        version: 13.3.0
+      prettier:
+        specifier: ^2.7.1
+        version: 2.8.8
+      prettier-plugin-organize-imports:
+        specifier: ^3.0.0
+        version: 3.2.4(prettier@2.8.8)(typescript@5.5.3)
+      prettier-plugin-packagejson:
+        specifier: ^2.2.18
+        version: 2.5.0(prettier@2.8.8)
+      react:
+        specifier: ^18.0.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.3.1(react@18.3.1)
+      stylelint:
+        specifier: ^14.9.1
+        version: 14.16.1
+      turbo:
+        specifier: ^2.0.12
+        version: 2.0.12
+
+  packages/isco:
+    dependencies:
+      iscorrect:
+        specifier: '*'
+        version: link:../..
 
 packages:
 
@@ -16407,6 +16418,66 @@ packages:
 
   /tty-browserify@0.0.0:
     resolution: {integrity: sha512-JVa5ijo+j/sOoHGjw0sxw734b1LhBkQ3bvUGNdxnVXDCX81Yx7TFgnZygxrIIWn23hbfTaMYLwRmAxFyDuFmIw==}
+    dev: true
+
+  /turbo-darwin-64@2.0.12:
+    resolution: {integrity: sha512-NAgfgbXxX/JScWQmmQnGbPuFZq7LIswHfcMk5JwyBXQM/xmklNOxxac7MnGGIOf19Z2f6S3qHy17VIj0SeGfnA==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-darwin-arm64@2.0.12:
+    resolution: {integrity: sha512-cP02uer5KSJ+fXL+OfRRk5hnVjV0c60hxDgNcJxrZpfhun7HHoKDDR7w2xhQntiA45aC6ZZEXRqMKpj6GAmKbg==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-linux-64@2.0.12:
+    resolution: {integrity: sha512-+mQgGfg1eq5qF+wenK/FKJaNMNAo5DQLC4htQy+8osW+fx6U+8+6UlPQPaycAWDEqwOI7NwuqkeHfkEQLQUTyQ==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-linux-arm64@2.0.12:
+    resolution: {integrity: sha512-KFyEZDXfPU1DK4zimxdCcqAcK7IIttX4mfsgB7NsSEOmH0dhHOih/YFYiyEDC1lTRx0C2RlzQ0Kjjdz48AN5Eg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-windows-64@2.0.12:
+    resolution: {integrity: sha512-kJj4KCkZTkDTDCqsSw1m1dbO4WeoQq1mYUm/thXOH0OkeqYbSMt0EyoTcJOgKUDsrMnzZD2gPfYrlYHtV69lVA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-windows-arm64@2.0.12:
+    resolution: {integrity: sha512-TY3ROxguDilN2olCwcZMaePdW01Xhma0pZU7bNhsQEqca9RGAmsZBuzfGnTMcWPmv4tpnb/PlX1hrt1Hod/44Q==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo@2.0.12:
+    resolution: {integrity: sha512-8s2KwqjwQj7z8Z53SUZSKVkQOZ2/Sl4D2F440oaBY/k2lGju60dW6srEpnn8/RIDeICZmQn3pQHF79Jfnc5Skw==}
+    hasBin: true
+    optionalDependencies:
+      turbo-darwin-64: 2.0.12
+      turbo-darwin-arm64: 2.0.12
+      turbo-linux-64: 2.0.12
+      turbo-linux-arm64: 2.0.12
+      turbo-windows-64: 2.0.12
+      turbo-windows-arm64: 2.0.12
     dev: true
 
   /type-check@0.4.0:

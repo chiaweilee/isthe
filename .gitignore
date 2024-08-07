@@ -1,7 +1,8 @@
 .idea
 .vscode
 node_modules
-/dist
+dist
+.turbo
 .dumi/tmp
 .dumi/tmp-test
 .dumi/tmp-production

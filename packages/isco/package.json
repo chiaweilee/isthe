@@ -1,0 +1,27 @@
+{
+  "name": "isco",
+  "version": "0.0.1",
+  "description": "A JavaScript validator and parser library delivering modularity.",
+  "repository": "https://github.com/is-lib/iscorrect/",
+  "license": "MIT",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "father build",
+    "doctor": "father doctor",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "dependencies": {
+    "iscorrect": "0.0.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "authors": [
+    "ljw@live.jp"
+  ]
+}
