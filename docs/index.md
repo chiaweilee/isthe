@@ -1,18 +1,22 @@
 ---
 hero:
-  title: iscorrect
-  description: A JavaScript library that supports validation, parsing, and conversion of input data formats.
+  title: library
+  description: A JavaScript validator and parser library delivering modularity.
   actions:
-    - text: Getting Started
-      link: /overview
-    - text: Documentation
-      link: /library
+    - text: Hello
+      link: /
+    - text: World
+      link: /
 features:
   - title: Hello
+    emoji: 💎
     description: Put hello description here
   - title: World
+    emoji: 🌈
     description: Put world description here
   - title: '!'
+    emoji: 🚀
     description: Put ! description here
 ---
 
+iscorrect

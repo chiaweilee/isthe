@@ -10,8 +10,7 @@
       "@@/*": [".dumi/tmp/*"],
       "iscorrect": ["packages/iscorrect/src"],
       "iscorrect/*": ["packages/iscorrect/src/*", "*"]
-    },
-    "types": ["jest"]
+    }
   },
   "include": [".dumirc.ts", "packages/iscorrect/src/**/*"]
 }

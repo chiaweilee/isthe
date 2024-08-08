@@ -1,4 +1,4 @@
-import { BaseOptions, BaseResult } from '../../shared';
+import { BaseOptions, BaseResult } from '../shared';
 
 export interface MobileNoOptions extends BaseOptions {
   loose?: boolean;

@@ -1,1 +1,1 @@
-export { default as isCNMobileNo } from './cn/mobileNo';
+export { default as isCNMobileNo } from './mobileNo';

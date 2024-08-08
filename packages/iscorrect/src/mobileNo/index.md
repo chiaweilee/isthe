@@ -8,7 +8,7 @@ title: mobileNo
  */
 import type { DescriptionsProps } from 'antd';
 import { Checkbox, Descriptions, Flex, Input, Typography } from 'antd';
-import isMobileNo from 'iscorrect/cn/mobileNo';
+import isMobileNo from 'iscorrect/mobileNo';
 import React, { useCallback, useEffect, useState } from 'react';
 
 const { Title, Link } = Typography;
@@ -121,7 +121,7 @@ export default function () {
 ## 使用方法
 
 ```js
-import isMobileNo from 'iscorrect/cn/mobileNo';
+import isMobileNo from 'iscorrect/mobileNo';
 isMobileNo('13333333333'); // { valid: true }
 ```
 
@@ -132,7 +132,7 @@ isMobileNo('13333333333'); // { valid: true }
 宽松校验模式下，允许使用“空格”和“-”分隔符。
 
 ```js
-import isMobileNo from 'iscorrect/cn/mobileNo';
+import isMobileNo from 'iscorrect/mobileNo';
 isMobileNo('133-3333-3333'); // { valid: true }
 ```
 
@@ -141,7 +141,7 @@ isMobileNo('133-3333-3333'); // { valid: true }
 在校验的同时进行数据清洗
 
 ```js
-import isMobileNo from 'iscorrect/cn/mobileNo';
+import isMobileNo from 'iscorrect/mobileNo';
 
 function validateAndClean(mobileNo) {
   const { valid, formatted } = isMobileNo(mobileNo;
@@ -156,7 +156,7 @@ validateAndClean('133-3333-3333'); // '13333333333'
 默认会校验所有号段，你可以通过参数调整校验范围
 
 ```js
-import isMobileNo from 'iscorrect/cn/mobileNo';
+import isMobileNo from 'iscorrect/mobileNo';
 
 isMobileNo('14000000000', {
   rules: {
